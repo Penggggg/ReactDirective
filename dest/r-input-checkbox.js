@@ -1,6 +1,6 @@
 "use strict";
 
-var Rinput = React.createClass({ displayName: "Rinput",
+var RinputChk = React.createClass({ displayName: "RinputChk",
 	getInitialState: function getInitialState() {
 		return {
 			RIfChecked: false, //default: not checked...
@@ -27,7 +27,7 @@ var Rinput = React.createClass({ displayName: "Rinput",
 
 var FormSet = React.createClass({ displayName: "FormSet",
 	render: function render() {
-		return React.createElement("div", null, React.createElement("div", { className: "checkbox" }, React.createElement(Rinput, { RTrueValue: "i like play games", RFlaseValue: "i dont like play games now", Rtag: "Do you like games?" })));
+		return React.createElement("div", null, React.createElement("div", { className: "checkbox" }, React.createElement(RinputChk, { RTrueValue: "i like play games", RFlaseValue: "i dont like play games now", Rtag: "Do you like games?" })));
 	}
 });
 

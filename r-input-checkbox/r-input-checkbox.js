@@ -1,4 +1,4 @@
-var Rinput = React.createClass({
+var RinputChk = React.createClass({
 	getInitialState: function(){
 		return {
 			RIfChecked: false,//default: not checked...
@@ -32,7 +32,7 @@ var FormSet = React.createClass({
 	render: function(){
 		return <div>
 			<div className="checkbox">
-				<Rinput RTrueValue="i like play games" RFlaseValue="i dont like play games now" Rtag="Do you like games?" />
+				<RinputChk RTrueValue="i like play games" RFlaseValue="i dont like play games now" Rtag="Do you like games?" />
 			</div>
 		</div>
 	}
